@@ -31,4 +31,9 @@ Pod::Spec.new do |s|
   s.dependency 'MBProgressHUD', '~> 1.2'
 
   s.frameworks = 'UIKit', 'Foundation'
+
+  # Fix for Xcode 14+ compatibility with MBProgressHUD's iOS 8.0 deployment target
+  s.pod_target_xcconfig = {
+    'IPHONEOS_DEPLOYMENT_TARGET' => '12.0'
+  }
 end
