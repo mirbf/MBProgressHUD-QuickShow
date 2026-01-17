@@ -173,6 +173,72 @@ pod trunk add-owner MBProgressHUD_QuickShow email@example.com
 pod trunk remove-owner MBProgressHUD_QuickShow email@example.com
 ```
 
+## 👤 CocoaPods 账号管理
+
+### 账号信息
+- **邮箱**: 2946779829@qq.com
+- **名称**: Bfchen
+- **注册时间**: 2026-01-17
+
+### 在新电脑上使用账号
+
+CocoaPods Trunk 通过**会话（Session）**来识别你的身份。换电脑后需要重新注册会话。
+
+#### 步骤 1: 重新注册会话
+```bash
+pod trunk register 2946779829@qq.com 'Bfchen' --description='新电脑名称'
+```
+
+#### 步骤 2: 验证邮箱
+你会收到一封验证邮件，点击邮件中的链接完成验证。
+
+**注意**：
+- 这不会创建新账号，而是为同一个账号添加新的会话
+- 一个账号可以有多个会话（不同的电脑）
+- 每个会话有效期是 1 年
+
+### 查看所有会话
+```bash
+pod trunk me
+```
+
+会显示：
+```
+- Name:     Bfchen
+- Email:    2946779829@qq.com
+- Since:    January 17th, 01:39
+- Pods:     MBProgressHUD_QuickShow
+- Sessions:
+  - January 17th, 01:39 - May 25th, 01:39. IP: 14.212.9.102 Description: MacBook Pro
+  - January 18th, 10:00 - May 26th, 10:00. IP: xxx.xxx.xxx.xxx Description: 新电脑名称
+```
+
+### 清理过期会话
+```bash
+pod trunk me clean-sessions
+```
+
+这会删除所有过期的会话。
+
+### 工作原理
+
+CocoaPods Trunk 通过以下方式识别你：
+1. **邮箱地址**：你的唯一标识
+2. **会话 Token**：存储在本地 `~/.netrc` 文件中
+3. **验证邮件**：每次新会话都需要邮件验证
+
+### 安全建议
+- 定期清理不用的会话
+- 不要分享你的 `~/.netrc` 文件
+- 如果担心安全，可以删除所有会话后重新注册
+
+### 相关网站
+- **你的 pod 页面**: https://cocoapods.org/pods/MBProgressHUD_QuickShow
+- **CocoaPods 搜索**: https://cocoapods.org/
+- **GitHub 仓库**: https://github.com/mirbf/MBProgressHUD-QuickShow
+
+**注意**：CocoaPods 没有网页登录功能，所有管理操作都通过命令行完成。
+
 ## 📞 问题排查
 
 ### 问题 1: 验证失败 - libarclite 错误
