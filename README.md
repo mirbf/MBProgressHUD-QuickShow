@@ -13,6 +13,7 @@ A convenient category extension for MBProgressHUD with quick show methods.
 ## Requirements
 
 - iOS 12.0+
+- Xcode 14-15
 - MBProgressHUD ~> 1.2
 
 ## Installation
