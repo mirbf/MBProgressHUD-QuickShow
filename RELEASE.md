@@ -1,10 +1,10 @@
-# MBProgressHUD-QuickShow 发布流程
+# MBProgressHUD_QuickShow 发布流程
 
 ## 📦 Pod 信息
 
-- **名称**: MBProgressHUD-QuickShow
-- **当前版本**: 1.0.0
-- **CocoaPods 页面**: https://cocoapods.org/pods/MBProgressHUD-QuickShow
+- **名称**: MBProgressHUD_QuickShow
+- **当前版本**: 1.0.1
+- **CocoaPods 页面**: https://cocoapods.org/pods/MBProgressHUD_QuickShow
 - **GitHub 仓库**: https://github.com/mirbf/MBProgressHUD-QuickShow
 - **作者**: Bfchen (2946779829@qq.com)
 
@@ -61,9 +61,9 @@ pod trunk push MBProgressHUD-QuickShow.podspec --use-libraries --allow-warnings
 修改源代码文件，添加新功能或修复 bug。
 
 ### 步骤 2: 更新版本号
-编辑 `MBProgressHUD-QuickShow.podspec` 文件，修改版本号：
+编辑 `MBProgressHUD_QuickShow.podspec` 文件，修改版本号：
 ```ruby
-s.version = '1.0.1'  # 从 1.0.0 改为 1.0.1
+s.version = '1.0.2'  # 从 1.0.1 改为 1.0.2
 ```
 
 ### 步骤 3: 更新 README（如需要）
@@ -104,16 +104,16 @@ pod spec lint MBProgressHUD-QuickShow.podspec --use-libraries --allow-warnings
 
 ### 步骤 7: 发布到 CocoaPods
 ```bash
-pod trunk push MBProgressHUD-QuickShow.podspec --use-libraries --allow-warnings
+pod trunk push MBProgressHUD_QuickShow.podspec --use-libraries --allow-warnings
 ```
 
 ### 步骤 8: 验证发布结果
 ```bash
 # 搜索 pod
-pod search MBProgressHUD-QuickShow
+pod search MBProgressHUD_QuickShow
 
 # 查看 pod 信息
-pod trunk info MBProgressHUD-QuickShow
+pod trunk info MBProgressHUD_QuickShow
 ```
 
 ## 📋 版本号规范
@@ -155,22 +155,22 @@ pod trunk me
 
 ### 查看 pod 信息
 ```bash
-pod trunk info MBProgressHUD-QuickShow
+pod trunk info MBProgressHUD_QuickShow
 ```
 
 ### 删除已发布的版本（慎用）
 ```bash
-pod trunk delete MBProgressHUD-QuickShow 1.0.0
+pod trunk delete MBProgressHUD_QuickShow 1.0.1
 ```
 
 ### 添加其他维护者
 ```bash
-pod trunk add-owner MBProgressHUD-QuickShow email@example.com
+pod trunk add-owner MBProgressHUD_QuickShow email@example.com
 ```
 
 ### 移除维护者
 ```bash
-pod trunk remove-owner MBProgressHUD-QuickShow email@example.com
+pod trunk remove-owner MBProgressHUD_QuickShow email@example.com
 ```
 
 ## 📞 问题排查
@@ -186,7 +186,7 @@ pod trunk remove-owner MBProgressHUD-QuickShow email@example.com
 **解决方案**: 重试命令，或检查网络连接
 
 ### 问题 3: 版本已存在
-**错误信息**: `Unable to accept duplicate entry for: MBProgressHUD-QuickShow (1.0.0)`
+**错误信息**: `Unable to accept duplicate entry for: MBProgressHUD_QuickShow (1.0.1)`
 
 **解决方案**: 更新版本号后重新发布
 
@@ -203,6 +203,11 @@ pod trunk remove-owner MBProgressHUD-QuickShow email@example.com
 - [MBProgressHUD 官方仓库](https://github.com/jdg/MBProgressHUD)
 
 ## 📝 更新历史
+
+### v1.0.1 (2026-01-17)
+- 重命名 pod 为 MBProgressHUD_QuickShow（使用下划线）
+- 修复 framework 名称和 pod 名称不一致的问题
+- 更新文档和示例代码
 
 ### v1.0.0 (2026-01-17)
 - 首次发布

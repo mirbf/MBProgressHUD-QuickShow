@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  s.name             = 'MBProgressHUD-QuickShow'
-  s.version          = '1.0.0'
+  s.name             = 'MBProgressHUD_QuickShow'
+  s.version          = '1.0.1'
   s.summary          = 'A convenient category extension for MBProgressHUD with quick show methods.'
 
   s.description      = <<-DESC
-  MBProgressHUD-QuickShow provides convenient methods to quickly show toast messages
+  MBProgressHUD_QuickShow provides convenient methods to quickly show toast messages
   and loading HUDs with a consistent style. It includes methods for showing text toasts,
   loading indicators, and hiding them with simple one-line calls.
 

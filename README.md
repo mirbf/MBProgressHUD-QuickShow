@@ -1,4 +1,4 @@
-# MBProgressHUD-QuickShow
+# MBProgressHUD_QuickShow
 
 A convenient category extension for MBProgressHUD with quick show methods.
 
@@ -23,7 +23,7 @@ A convenient category extension for MBProgressHUD with quick show methods.
 Add this to your Podfile:
 
 ```ruby
-pod 'MBProgressHUD-QuickShow'
+pod 'MBProgressHUD_QuickShow'
 ```
 
 Then run:
@@ -39,7 +39,7 @@ pod install
 #### Import
 
 ```objective-c
-#import <MBProgressHUD-QuickShow/MBProgressHUD+QuickShow.h>
+#import <MBProgressHUD_QuickShow/MBProgressHUD+QuickShow.h>
 ```
 
 #### Show Toast Message
@@ -150,7 +150,7 @@ MBProgressHUD.zyc_hideToastsInKeyWindow()
 
 ## License
 
-MBProgressHUD-QuickShow is available under the MIT license. See the LICENSE file for more info.
+MBProgressHUD_QuickShow is available under the MIT license. See the LICENSE file for more info.
 
 ## Author
 
